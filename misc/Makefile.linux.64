@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS=-g -Wall
+#CFLAGS=-O3
+OUTPUT=chmayor.x86_64
+FILES=src/chmayor.c
+
+all: $(FILES)
+	$(CC) $(CFLAGS) $(FILES) -o $(OUTPUT)
